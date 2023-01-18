@@ -1,5 +1,4 @@
 import React, { useDebugValue, useEffect, useState } from 'react'
-import Card from '../../Components/Card'
 import * as S from './homeStyle'
 import { db } from '../../config/firebase-config'
 import { collection, getDocs, addDoc } from 'firebase/firestore'
