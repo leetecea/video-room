@@ -1,7 +1,7 @@
-import React, { useDebugValue, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import * as S from './homeStyle'
 import { db } from '../../config/firebase-config'
-import { collection, getDocs, addDoc } from 'firebase/firestore'
+import { collection, addDoc } from 'firebase/firestore'
 
 export default function index() {
 
@@ -37,22 +37,6 @@ export default function index() {
 
     }
   }
-
-
-  useEffect(() => {
-    const getUsers = async () => {
-      const data = await getDocs(usersCollectionRef);
-      console.log(data)
-      setUsers(data.docs.map(doc => ({...doc.data(), id: doc.id})))
-    };
-    const getRooms = async () => {
-      const data = await getDocs(roomsCollectionRef);
-      console.log(data)
-      setRooms(data.docs.map(doc => ({...doc.data(), id: doc.id})))
-    };
-
-    getUsers();
-  },[])
   
   return (
     <S.Container>
@@ -71,7 +55,7 @@ export default function index() {
           <button onClick={() => {createUser()}}>Entrar</button>
         </div>
 
-        <div>git 
+        <div>
           <h2>Tem um código de sala?</h2>
           <div>
             <label htmlFor="nameRoom">Utilize o código aqui:</label>
