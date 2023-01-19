@@ -32,9 +32,8 @@ export default function index() {
   }
 
   const opts = {
-    height: '400',
+    height: '360',
     width: '700',
-    videoId: 'M7lc1UVf-VE',
     playerVars: {
       autoplay: 0,
       controls: 1,

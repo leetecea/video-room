@@ -9,8 +9,8 @@ justify-content: center;
 gap: 1em;
 
 button{
-  width: 10%;
-  padding: .5em .5em .5em .5em;
+  width: 10em;
+  padding: .5em;
   align-self: center;
   border-radius: 10px;
   border: none;
