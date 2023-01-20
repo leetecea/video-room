@@ -32,3 +32,6 @@ Para abrir o projeto:
 - ``npm install`` na pasta raiz para instalar as dependências
 - ``npm run dev`` para rodar o projeto
 O projeto irá abrir na url: (http://localhost:5173).
+
+## Código de uma sala já criada: 
+- 572EoCNCy4Ij6qJqAbFE
