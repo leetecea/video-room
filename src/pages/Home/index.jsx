@@ -24,6 +24,7 @@ export default function index() {
       setNameRoom("");
       setNameUser("") 
     }
+    window.location.replace(`http://localhost:5173/room/:${codeRoom}`)
   }
 
   const loginRoom = async () => {

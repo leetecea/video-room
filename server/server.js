@@ -15,9 +15,9 @@ const io = new Server(httpServer, {
 
 app.use(cors());
 
-// app.get('/room/:id', async (req,res) => {
-//   res.render('room', {roomID: req.params.id})
-// })
+app.get('/room/:id', async (req,res) => {
+  res.render('room', {roomID: req.params.id})
+})
 
 io.on("connection", (socket) => {
   console.log(`User connected: ${socket.id}`);
