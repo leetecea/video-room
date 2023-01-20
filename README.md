@@ -33,5 +33,5 @@ Para abrir o projeto:
 - ``npm run dev`` para rodar o projeto
 O projeto irá abrir na url: (http://localhost:5173).
 
-## Código de uma sala já criada: 
+Código de uma sala já criada: 
 - 572EoCNCy4Ij6qJqAbFE
